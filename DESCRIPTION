@@ -1,0 +1,36 @@
+Package: EpiTxDb.Sc.sacCer3
+Title: Annotation package for EpiTxDb object(s)
+Description:
+    Exposes an annotation databases generated from several sources by exposing
+    these as EpiTxDb object.
+Version: 0.98
+Authors@R: person("Felix G.M.", 
+                  "Ernst", 
+                  email = "felix.gm.ernst@outlook.com", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-5064-0928"))
+License: Artistic-2.0
+Encoding: UTF-8
+NeedsCompilation: no
+LazyData: false
+Depends:
+    R (>= 3.6),
+    EpiTxDb
+Imports:
+    AnnotationDbi
+biocViews:
+    AnnotationData,
+    Epitranscriptomics,
+    TxDb,
+    Homo_sapiens
+Collate:
+    'EpiTxDb.Sc.sacCer3.R'
+    'import.R'
+organism:
+    Saccharomyces cerevisiae
+species:
+    Saccharomyces cerevisiae
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+BugReports: https://github.com/FelixErnst/EpiTxDb.Hsapiens.hg38/issues
+URL: https://github.com/FelixErnst/EpiTxDb.Hsapiens.hg38
