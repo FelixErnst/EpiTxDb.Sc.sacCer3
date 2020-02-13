@@ -105,6 +105,7 @@
 #   sqliteCopyDatabase(etdb$conn, db)
 #   dbDisconnect(etdb$conn)
 #   dbDisconnect(db)
+#   
 #   etdb <- import_from_tRNAdb(bs, tx_sub)
 #   db <- dbConnect(SQLite(), "inst/extdata/EpiTxDb.Sc.sacCer3.tRNAdb.sqlite")
 #   sqliteCopyDatabase(etdb$conn, db)
