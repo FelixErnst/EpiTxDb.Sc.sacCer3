@@ -1,9 +1,9 @@
 Package: EpiTxDb.Sc.sacCer3
-Title: Annotation package for EpiTxDb object(s)
+Title: Annotation package for EpiTxDb objects
 Description:
     Exposes an annotation databases generated from several sources by exposing
-    these as EpiTxDb object.
-Version: 0.98
+    these as EpiTxDb object. Generated for Saccharomyces cerevisiae/sacCer3.
+Version: 0.99
 Authors@R: person("Felix G.M.", 
                   "Ernst", 
                   email = "felix.gm.ernst@outlook.com", 
@@ -13,16 +13,21 @@ License: Artistic-2.0
 Encoding: UTF-8
 NeedsCompilation: no
 LazyData: false
-Depends:
-    R (>= 3.6),
-    EpiTxDb
-Imports:
-    AnnotationDbi
 biocViews:
     AnnotationData,
     Epitranscriptomics,
     TxDb,
     Homo_sapiens
+Depends:
+    R (>= 3.6),
+    EpiTxDb
+Imports:
+    AnnotationDbi
+Suggests:
+    BiocStyle,
+    knitr,
+    rmarkdown,
+    testthat
 Collate:
     'EpiTxDb.Sc.sacCer3.R'
     'import.R'

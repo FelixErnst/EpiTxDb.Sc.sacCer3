@@ -10,8 +10,6 @@
 #' resources exposed.  So for example EpiTxDb.Hsapiens.hg38.snoRNAdb would be a
 #' EpiTxDb object of Homo sapiens data from snoRNAdb build based on the hg38
 #' build.
-#'
-#' @note 
 #' 
 #' @seealso
 #' \itemize{
@@ -30,17 +28,32 @@
 #' EpiTxDb.Sc.sacCer3.RMBase
 NULL
 
+#' @import EpiTxDb
+NULL
+
 .onLoad <- function(libname, pkgname)
 {
   ns <- asNamespace(pkgname)
-  path <- system.file("extdata", package=pkgname, lib.loc=libname)
+  path <- system.file("extdata", package = pkgname, lib.loc = libname)
   files <- dir(path)
   files <- files[grepl("*\\.sqlite",files)]
   for(i in seq_len(length(files))){
-    db <- loadDb(system.file("extdata", files[[i]], package=pkgname, 
-                             lib.loc=libname),packageName=pkgname)
-    objname <- sub(".sqlite$","",files[[i]])
-    assign(objname, db, envir=ns)
+    db <- 
+      AnnotationDbi::loadDb(system.file("extdata", files[[i]],
+                                        package = pkgname, lib.loc = libname),
+                                packageName = pkgname)
+    objname <- sub(".sqlite$", "", files[[i]])
+    assign(objname, db, envir = ns)
     namespaceExport(ns, objname)
   }
 }
+
+
+#' @rdname EpiTxDb.Sc.sacCer3
+#' @keywords datasets
+#' 
+#' @usage EpiTxDb.Sc.sacCer3.tRNAdb
+"EpiTxDb.Sc.sacCer3.tRNAdb"
+#' @rdname EpiTxDb.Sc.sacCer3
+#' @usage EpiTxDb.Sc.sacCer3.RMBase
+"EpiTxDb.Sc.sacCer3.RMBase"

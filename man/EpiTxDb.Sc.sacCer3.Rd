@@ -3,7 +3,15 @@
 \docType{package}
 \name{EpiTxDb.Sc.sacCer3}
 \alias{EpiTxDb.Sc.sacCer3}
+\alias{EpiTxDb.Sc.sacCer3.tRNAdb}
+\alias{EpiTxDb.Sc.sacCer3.RMBase}
 \title{Annotation package for EpiTxDb object(s)}
+\format{An object of class \code{EpiTxDb} of length 1.}
+\usage{
+EpiTxDb.Sc.sacCer3.tRNAdb
+
+EpiTxDb.Sc.sacCer3.RMBase
+}
 \description{
 This package loads one or more EpiTxDb objects. Such EpiTxDb objects are an
 R interface to prefabricated databases contained by this package.
@@ -12,9 +20,6 @@ The names of any objects exposed by this package indicate the origin and
 resources exposed.  So for example EpiTxDb.Hsapiens.hg38.snoRNAdb would be a
 EpiTxDb object of Homo sapiens data from snoRNAdb build based on the hg38
 build.
-}
-\note{
-
 }
 \examples{
 library(EpiTxDb.Sc.sacCer3)
@@ -32,3 +37,4 @@ EpiTxDb.Sc.sacCer3.RMBase
 \author{
 Felix G M Ernst [aut]
 }
+\keyword{datasets}

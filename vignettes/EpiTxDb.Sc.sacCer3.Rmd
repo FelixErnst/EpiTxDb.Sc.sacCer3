@@ -1,0 +1,54 @@
+---
+title: "EpiTxDb.Sc.sacCer3: Annotation package for EpiTxDb objects"
+author: "Felix G.M. Ernst"
+date: "`r Sys.Date()`"
+package: EpiTxDb.Sc.sacCer3
+output:
+  BiocStyle::html_document:
+    toc: true
+    toc_float: true
+    df_print: paged
+vignette: >
+  %\VignetteIndexEntry{EpiTxDb.Sc.sacCer3}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+bibliography: references.bib
+---
+
+```{r style, echo = FALSE, results = 'asis'}
+BiocStyle::markdown(css.files = c('custom.css'))
+```
+
+# Available resources
+
+`EpiTxDb.Sc.sacCer3` contains post-transcriptional RNA modifications from 
+RMBase v2.0 [@Xuan.2017] and tRNAdb [@Juehling.2009].
+
+```{r, echo=FALSE}
+suppressPackageStartupMessages({
+  library(EpiTxDb.Sc.sacCer3)
+})
+```
+```{r, eval=FALSE}
+library(EpiTxDb.Sc.sacCer3)
+```
+
+Modification information can be accessed through the typical function for an
+`EpiTxDb` object, for example `modifications()`:
+
+```{r}
+modifications(EpiTxDb.Sc.sacCer3.tRNAdb)
+```
+
+For a more detailed overview and explanation of the functionality of the 
+`EpiTxDb` class, have a look at the `EpiTxDb` package.
+
+# Sessioninfo
+
+```{r}
+sessionInfo()
+```
+
+<a name="References"></a>
+
+# References
