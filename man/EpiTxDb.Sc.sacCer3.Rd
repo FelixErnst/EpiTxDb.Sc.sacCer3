@@ -5,21 +5,25 @@
 \alias{EpiTxDb.Sc.sacCer3}
 \alias{EpiTxDb.Sc.sacCer3.tRNAdb}
 \alias{EpiTxDb.Sc.sacCer3.RMBase}
-\title{Annotation package for EpiTxDb object(s)}
+\title{Annotation package for \code{EpiTxDb} objects}
 \format{An object of class \code{EpiTxDb} of length 1.}
 \usage{
 EpiTxDb.Sc.sacCer3.tRNAdb
 
 EpiTxDb.Sc.sacCer3.RMBase
 }
+\value{
+a \code{\link[EpiTxDb:EpiTxDb-class]{EpiTxDb}} object
+}
 \description{
-This package loads one or more EpiTxDb objects. Such EpiTxDb objects are an
-R interface to prefabricated databases contained by this package.
+This package loads one or more \code{EpiTxDb} objects. Such \code{EpiTxDb}
+objects are an R interface to prefabricated databases contained by this
+package.
 
 The names of any objects exposed by this package indicate the origin and
-resources exposed.  So for example EpiTxDb.Hsapiens.hg38.snoRNAdb would be a
-EpiTxDb object of Homo sapiens data from snoRNAdb build based on the hg38
-build.
+resources exposed. So for example \code{EpiTxDb.Sc.sacCer3.tRNAdb} would be a
+\code{EpiTxDb} object for Saccharomyces cerevisia data from tRNAdb build
+based on the sacCer3 genome build.
 }
 \examples{
 EpiTxDb.Sc.sacCer3.RMBase

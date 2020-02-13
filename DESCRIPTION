@@ -37,5 +37,5 @@ species:
     Saccharomyces cerevisiae
 VignetteBuilder: knitr
 RoxygenNote: 7.0.2
-BugReports: https://github.com/FelixErnst/EpiTxDb.Hsapiens.hg38/issues
-URL: https://github.com/FelixErnst/EpiTxDb.Hsapiens.hg38
+BugReports: https://github.com/FelixErnst/EpiTxDb.Sc.sacCer3/issues
+URL: https://github.com/FelixErnst/EpiTxDb.Sc.sacCer3

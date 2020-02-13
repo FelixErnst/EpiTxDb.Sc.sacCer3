@@ -1,15 +1,18 @@
-#' @title Annotation package for EpiTxDb object(s)
+#' @title Annotation package for \code{EpiTxDb} objects
 #'
 #' @author Felix G M Ernst [aut]
 #'
 #' @description
-#' This package loads one or more EpiTxDb objects. Such EpiTxDb objects are an
-#' R interface to prefabricated databases contained by this package.
+#' This package loads one or more \code{EpiTxDb} objects. Such \code{EpiTxDb}
+#' objects are an R interface to prefabricated databases contained by this
+#' package.
 #' 
 #' The names of any objects exposed by this package indicate the origin and
-#' resources exposed.  So for example EpiTxDb.Hsapiens.hg38.snoRNAdb would be a
-#' EpiTxDb object of Homo sapiens data from snoRNAdb build based on the hg38
-#' build.
+#' resources exposed. So for example \code{EpiTxDb.Sc.sacCer3.tRNAdb} would be a
+#' \code{EpiTxDb} object for Saccharomyces cerevisia data from tRNAdb build
+#' based on the sacCer3 genome build.
+#' 
+#' @return a \code{\link[EpiTxDb:EpiTxDb-class]{EpiTxDb}} object 
 #' 
 #' @seealso
 #' \itemize{
