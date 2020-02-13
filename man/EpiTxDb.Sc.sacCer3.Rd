@@ -22,7 +22,6 @@ EpiTxDb object of Homo sapiens data from snoRNAdb build based on the hg38
 build.
 }
 \examples{
-library(EpiTxDb.Sc.sacCer3)
 EpiTxDb.Sc.sacCer3.RMBase
 }
 \seealso{

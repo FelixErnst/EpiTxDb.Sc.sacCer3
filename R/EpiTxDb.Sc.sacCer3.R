@@ -24,7 +24,6 @@
 #' @name EpiTxDb.Sc.sacCer3
 #' 
 #' @examples 
-#' library(EpiTxDb.Sc.sacCer3)
 #' EpiTxDb.Sc.sacCer3.RMBase
 NULL
 
@@ -33,19 +32,20 @@ NULL
 
 .onLoad <- function(libname, pkgname)
 {
-  ns <- asNamespace(pkgname)
-  path <- system.file("extdata", package = pkgname, lib.loc = libname)
-  files <- dir(path)
-  files <- files[grepl("*\\.sqlite",files)]
-  for(i in seq_len(length(files))){
-    db <- 
-      AnnotationDbi::loadDb(system.file("extdata", files[[i]],
-                                        package = pkgname, lib.loc = libname),
-                                packageName = pkgname)
-    objname <- sub(".sqlite$", "", files[[i]])
-    assign(objname, db, envir = ns)
-    namespaceExport(ns, objname)
-  }
+    ns <- asNamespace(pkgname)
+    path <- system.file("extdata", package = pkgname, lib.loc = libname)
+    files <- dir(path)
+    files <- files[grepl("*\\.sqlite",files)]
+    for(i in seq_len(length(files))){
+        db <- 
+          AnnotationDbi::loadDb(system.file("extdata", files[[i]],
+                                            package = pkgname,
+                                            lib.loc = libname),
+                                    packageName = pkgname)
+        objname <- sub(".sqlite$", "", files[[i]])
+        assign(objname, db, envir = ns)
+        namespaceExport(ns, objname)
+    }
 }
 
 
