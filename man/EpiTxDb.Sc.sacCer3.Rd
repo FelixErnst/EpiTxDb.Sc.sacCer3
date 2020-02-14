@@ -3,14 +3,13 @@
 \docType{package}
 \name{EpiTxDb.Sc.sacCer3}
 \alias{EpiTxDb.Sc.sacCer3}
-\alias{EpiTxDb.Sc.sacCer3.tRNAdb}
 \alias{EpiTxDb.Sc.sacCer3.RMBase}
+\alias{EpiTxDb.Sc.sacCer3.tRNAdb}
 \title{Annotation package for \code{EpiTxDb} objects}
-\format{An object of class \code{EpiTxDb} of length 1.}
 \usage{
-EpiTxDb.Sc.sacCer3.tRNAdb
+EpiTxDb.Sc.sacCer3.RMBase(version = "1")
 
-EpiTxDb.Sc.sacCer3.RMBase
+EpiTxDb.Sc.sacCer3.tRNAdb(version = "1")
 }
 \value{
 a \code{\link[EpiTxDb:EpiTxDb-class]{EpiTxDb}} object
@@ -40,4 +39,3 @@ EpiTxDb.Sc.sacCer3.RMBase
 \author{
 Felix G M Ernst [aut]
 }
-\keyword{datasets}

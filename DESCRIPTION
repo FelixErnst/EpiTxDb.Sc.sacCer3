@@ -30,7 +30,6 @@ Suggests:
     testthat
 Collate:
     'EpiTxDb.Sc.sacCer3.R'
-    'import.R'
 organism:
     Saccharomyces cerevisiae
 species:
