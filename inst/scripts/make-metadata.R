@@ -17,14 +17,14 @@ df <- rbind(
         DataFrame(Title = "EpiTxDb RMBase v2.0 for Saccharomyces cerevisiae sacCer3", 
                   Description = paste0(
                     ""), 
-                  SourceType = "TXT",
+                  SourceType = "BED",
                   SourceUrl = RMBaseURL,
                   DataProvider = "RMBase v2.0",
                   RDataClass = "SQLiteFile", 
                   DispatchClass = "SQLiteFile",
                   RDataPath = "EpiTxDb.Sc.sacCer3/EpiTxDb.Sc.sacCer3.RMBase.sqlite")),
   cbind(df_Base,
-        DataFrame(Title = "EpiTxDb RMBase v2.0 for Saccharomyces cerevisiae sacCer3", 
+        DataFrame(Title = "EpiTxDb tRNAdb for Saccharomyces cerevisiae sacCer3", 
                   Description = paste0(
                     ""),
                   SourceType = "TXT",

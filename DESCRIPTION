@@ -27,7 +27,8 @@ Suggests:
     BiocStyle,
     knitr,
     rmarkdown,
-    testthat
+    testthat,
+    BSgenome.Scerevisiae.UCSC.sacCer3
 Collate:
     'EpiTxDb.Sc.sacCer3.R'
 organism:

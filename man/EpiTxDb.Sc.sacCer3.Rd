@@ -25,7 +25,7 @@ resources exposed. So for example \code{EpiTxDb.Sc.sacCer3.tRNAdb} would be a
 based on the sacCer3 genome build.
 }
 \examples{
-EpiTxDb.Sc.sacCer3.RMBase
+EpiTxDb.Sc.sacCer3.tRNAdb()
 }
 \seealso{
 \itemize{

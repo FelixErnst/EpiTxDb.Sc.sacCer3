@@ -27,7 +27,7 @@
 #' @name EpiTxDb.Sc.sacCer3
 #' 
 #' @examples 
-#' EpiTxDb.Sc.sacCer3.RMBase
+#' EpiTxDb.Sc.sacCer3.tRNAdb()
 NULL
 
 #' @import EpiTxDb
