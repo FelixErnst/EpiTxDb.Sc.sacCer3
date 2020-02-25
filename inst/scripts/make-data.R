@@ -46,7 +46,7 @@ import_from_tRNAdb <- function(bs, tx){
   metadata <- data.frame(name = c("Data source","Organism","Genome",
                                   "Coordinates"),
                          value = c("tRNAdb","Saccharomyces cerevisiae",
-                                   "sacCer3","per Genome"))
+                                   "sacCer3","per Transcript"))
     #
     seq <- getSeq(bs,tx)
     seq <- relist(unlist(unlist(seq)),
