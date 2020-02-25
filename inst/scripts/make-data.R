@@ -30,8 +30,10 @@ tx <- assemble_tx(edb, "sacCer3")
 ################################################################################
 
 import.RMBase <- function(bs, organism, genome, type){
-    metadata <- data.frame(name = c("Genome","Coordinates"),
-                           value = c("sacCer3","per Genome"))
+    metadata <- data.frame(name = c("Data source","Organism","Genome",
+                                    "Coordinates"),
+                           value = c("RMBase v2.0","Saccharomyces cerevisiae",
+                                     "sacCer3","per Genome"))
     #
     seq <- getSeq(bs)
     seq_rna <- as(seq,"RNAStringSet")
@@ -41,8 +43,10 @@ import.RMBase <- function(bs, organism, genome, type){
 }
 
 import_from_tRNAdb <- function(bs, tx){
-    metadata <- data.frame(name = c("Genome","Coordinates"),
-                           value = c("sacCer3","per Genome"))
+  metadata <- data.frame(name = c("Data source","Organism","Genome",
+                                  "Coordinates"),
+                         value = c("tRNAdb","Saccharomyces cerevisiae",
+                                   "sacCer3","per Genome"))
     #
     seq <- getSeq(bs,tx)
     seq <- relist(unlist(unlist(seq)),
