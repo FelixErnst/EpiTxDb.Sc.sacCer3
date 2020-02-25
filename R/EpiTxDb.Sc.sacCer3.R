@@ -30,6 +30,7 @@
 #' EpiTxDb.Sc.sacCer3.tRNAdb()
 NULL
 
+#' @import AnnotationHub
 #' @import EpiTxDb
 NULL
 
