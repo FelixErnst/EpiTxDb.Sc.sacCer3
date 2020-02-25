@@ -2,4 +2,5 @@
 
 export(EpiTxDb.Sc.sacCer3.RMBase)
 export(EpiTxDb.Sc.sacCer3.tRNAdb)
+import(AnnotationHub)
 import(EpiTxDb)
