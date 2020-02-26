@@ -21,8 +21,10 @@ BiocStyle::markdown(css.files = c('custom.css'))
 
 # Available resources
 
-`EpiTxDb.Sc.sacCer3` contains post-transcriptional RNA modifications from 
-RMBase v2.0 [@Xuan.2017] and tRNAdb [@Juehling.2009].
+`EpiTxDb.Sc.sacCer3` contains post-transcriptional RNA modifications from RMBase
+v2.0 [[@Xuan.2017]](#References) and tRNAdb [[@Juehling.2009]](#References) and
+can be accessed through the functions `EpiTxDb.Sc.sacCer3.tRNAdb()` and
+`EpiTxDb.Sc.sacCer3.RMBase()`
 
 ```{r, echo=FALSE}
 suppressPackageStartupMessages({
@@ -37,7 +39,8 @@ Modification information can be accessed through the typical function for an
 `EpiTxDb` object, for example `modifications()`:
 
 ```{r}
-modifications(EpiTxDb.Sc.sacCer3.tRNAdb)
+etdb <- EpiTxDb.Sc.sacCer3.tRNAdb()
+modifications(etdb)
 ```
 
 For a more detailed overview and explanation of the functionality of the 

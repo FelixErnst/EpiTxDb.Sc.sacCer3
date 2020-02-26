@@ -17,9 +17,7 @@
 #' @seealso
 #' \itemize{
 #' \item{\code{\link[EpiTxDb:modifications]{modifications}}}
-#' \item{\code{\link[EpiTxDb:modifications]{reactions}}}
-#' \item{\code{\link[EpiTxDb:modifications]{specifies}}}
-#' \item{\code{\link[EpiTxDb:modifications]{modificationsByTranscript}}}
+#' \item{\code{\link[EpiTxDb:modifications]{modificationsBy}}}
 #' \item{\code{\link[EpiTxDb:modifications]{modifiedSeqsByTranscript}}}
 #' }
 #' 
@@ -78,5 +76,4 @@ AH_DATA <- data.frame(version = "1",
 # AH_DATA <- rbind(AH_DATA,
 #                  data.frame(version = "1.0",
 #                             RMBase = "AH00000",
-#                             snoRNAdb = "AH00000",
 #                             tRNAdb = "AH00000"))
