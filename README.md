@@ -4,7 +4,8 @@
 
 # Installation
 
-The current version of the RNAmodR package is available from Bioconductor.
+The current version of the `EpiTxDb.Sc.sacCer3` package is available from 
+Bioconductor.
 
 ## Github
 
