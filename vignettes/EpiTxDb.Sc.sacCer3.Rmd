@@ -34,12 +34,15 @@ suppressPackageStartupMessages({
 ```{r, eval=FALSE}
 library(EpiTxDb.Sc.sacCer3)
 ```
+```{r}
+etdb <- EpiTxDb.Sc.sacCer3.tRNAdb()
+etdb
+```
 
 Modification information can be accessed through the typical function for an
 `EpiTxDb` object, for example `modifications()`:
 
 ```{r}
-etdb <- EpiTxDb.Sc.sacCer3.tRNAdb()
 modifications(etdb)
 ```
 

@@ -12,6 +12,9 @@
 #' \code{EpiTxDb} object for Saccharomyces cerevisia data from tRNAdb build
 #' based on the sacCer3 genome build.
 #' 
+#' @param version a \code{character} value defining a version. Versions
+#'   available: \code{"1"}.(default: \code{version = "1"})
+#'   
 #' @return a \code{\link[EpiTxDb:EpiTxDb-class]{EpiTxDb}} object 
 #' 
 #' @seealso
@@ -48,7 +51,7 @@ NULL
     .check_version(version)
     ah <- AnnotationHub()
     id <- AH_DATA[AH_DATA$version == version,type]
-    if(!is.na(id)){
+    if(is.na(id)){
         stop("Not data for '",type,"' and version '",version,"' available.")
     }
     resource <- ah[[id]]
@@ -71,7 +74,8 @@ EpiTxDb.Sc.sacCer3.tRNAdb <- function(version = "1"){
 
 AH_DATA <- data.frame(version = "1",
                       RMBase = "AH78919",
-                      tRNAdb = "AH78920")
+                      tRNAdb = "AH78920",
+                      stringsAsFactors = FALSE)
 
 # AH_DATA <- rbind(AH_DATA,
 #                  data.frame(version = "1.0",
