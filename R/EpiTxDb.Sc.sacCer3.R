@@ -51,7 +51,7 @@ NULL
     if(!is.na(id)){
         stop("Not data for '",type,"' and version '",version,"' available.")
     }
-    resource <- ah[[]]
+    resource <- ah[[id]]
     return(resource)
 }
 
@@ -70,8 +70,8 @@ EpiTxDb.Sc.sacCer3.tRNAdb <- function(version = "1"){
 # version information ----------------------------------------------------------
 
 AH_DATA <- data.frame(version = "1",
-                      RMBase = "AH00000",
-                      tRNAdb = "AH00000")
+                      RMBase = "AH78919",
+                      tRNAdb = "AH78920")
 
 # AH_DATA <- rbind(AH_DATA,
 #                  data.frame(version = "1.0",
