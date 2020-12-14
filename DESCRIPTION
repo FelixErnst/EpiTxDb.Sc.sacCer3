@@ -3,7 +3,7 @@ Title: Annotation package for EpiTxDb objects
 Description:
     Exposes an annotation databases generated from several sources by exposing
     these as EpiTxDb object. Generated for Saccharomyces cerevisiae/sacCer3.
-Version: 0.99.3
+Version: 0.99.4
 Authors@R: person("Felix G.M.", 
                   "Ernst", 
                   email = "felix.gm.ernst@outlook.com", 
@@ -26,7 +26,9 @@ Suggests:
     BiocStyle,
     knitr,
     rmarkdown,
-    testthat
+    testthat,
+    Modstrings,
+    rtracklayer
 Collate:
     'EpiTxDb.Sc.sacCer3.R'
 organism:
@@ -34,6 +36,6 @@ organism:
 species:
     Saccharomyces cerevisiae
 VignetteBuilder: knitr
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.1
 BugReports: https://github.com/FelixErnst/EpiTxDb.Sc.sacCer3/issues
 URL: https://github.com/FelixErnst/EpiTxDb.Sc.sacCer3

@@ -5,11 +5,17 @@
 \alias{EpiTxDb.Sc.sacCer3}
 \alias{EpiTxDb.Sc.sacCer3.RMBase}
 \alias{EpiTxDb.Sc.sacCer3.tRNAdb}
+\alias{EpiTxDb.Sc.sacCer3.snoRNAdb}
+\alias{snoRNA.targets.sacCer3}
 \title{Annotation package for \code{EpiTxDb} objects}
 \usage{
 EpiTxDb.Sc.sacCer3.RMBase(version = "1")
 
 EpiTxDb.Sc.sacCer3.tRNAdb(version = "1")
+
+EpiTxDb.Sc.sacCer3.snoRNAdb(version = "1")
+
+snoRNA.targets.sacCer3(version = "1")
 }
 \arguments{
 \item{version}{a \code{character} value defining a version. Versions

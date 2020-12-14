@@ -70,11 +70,25 @@ EpiTxDb.Sc.sacCer3.tRNAdb <- function(version = "1"){
     .load_resource(version = version, type = "tRNAdb")
 }
 
+#' @rdname EpiTxDb.Sc.sacCer3
+#' @export
+EpiTxDb.Sc.sacCer3.snoRNAdb <- function(version = "1"){
+    .load_resource(version = version, type = "snoRNAdb")
+}
+
+#' @rdname EpiTxDb.Sc.sacCer3
+#' @export
+snoRNA.targets.sacCer3 <- function(version = "1"){
+  .load_resource(version = version, type = "snoRNA_seq_sacCer3")
+}
+
 # version information ----------------------------------------------------------
 
 AH_DATA <- data.frame(version = "1",
                       RMBase = "AH78919",
                       tRNAdb = "AH78920",
+                      snoRNAdb = "",
+                      snoRNA_seq_sacCer3 = "",
                       stringsAsFactors = FALSE)
 
 # AH_DATA <- rbind(AH_DATA,
