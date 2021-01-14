@@ -3,7 +3,7 @@
 library(S4Vectors)
 
 df_Base <- DataFrame(
-  BiocVersion = "3.12",
+  BiocVersion = "3.13",
   SourceVersion = NA,
   Coordinate_1_based = TRUE,
   Maintainer = "Felix G.M. Ernst <felix.gm.ernst@outlook.com>"

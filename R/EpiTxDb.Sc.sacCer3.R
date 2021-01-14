@@ -87,8 +87,8 @@ snoRNA.targets.sacCer3 <- function(version = "1"){
 AH_DATA <- data.frame(version = "1",
                       RMBase = "AH78919",
                       tRNAdb = "AH78920",
-                      snoRNAdb = "",
-                      snoRNA_seq_sacCer3 = "",
+                      snoRNAdb = "AH89326",
+                      snoRNA_seq_sacCer3 = "AH89327",
                       stringsAsFactors = FALSE)
 
 # AH_DATA <- rbind(AH_DATA,
